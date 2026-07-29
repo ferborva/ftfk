@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glosario · El juego dentro del juego</title>
+<link rel="stylesheet" href="style.css?v=5">
+<script>try{var l=localStorage.getItem('jdj.lang')||'es',t=localStorage.getItem('jdj.theme')||'dark';var h=document.documentElement;h.setAttribute('data-lang',l);h.setAttribute('data-theme',t);h.setAttribute('lang',l);}catch(e){}</script>
+</head>
+<body data-page="gloss">
+<a class="skip" href="#main"><span class="es">Saltar al contenido</span><span class="en">Skip to content</span></a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" data-ic="pitch"></span>
+      <span class="brand-txt">
+        <span class="es">El juego dentro del juego</span><span class="en">The game inside the game</span>
+        <small><span class="es">Teoría del fútbol</span><span class="en">Football theory</span></small>
+      </span>
+    </a>
+    <span class="spacer"></span>
+    <div class="langsw" role="group" aria-label="Idioma / Language">
+      <button data-lang="es" aria-pressed="true">ES</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="ctrl" id="themeBtn" aria-label="Theme"></button>
+    <button class="ctrl" id="menuBtn" aria-expanded="false" aria-controls="drawer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span data-ui="menu">Capítulos</span>
+    </button>
+  </div>
+  <div class="progress"><i></i></div>
+</header>
+<div class="scrim" id="scrim"></div>
+<nav class="drawer" id="drawer" aria-label="Chapters">
+  <div class="drawer-hd"><strong data-ui="chapters">Capítulos</strong><span class="spacer"></span><button class="ctrl" id="closeDrawer" aria-label="Close">✕</button></div>
+  <div class="drawer-body" id="drawerList"></div>
+</nav>
+
+<main id="main"><div class="wrap">
+
+<section class="hero">
+  <div class="eyebrow"><span class="es">Todas las palabras</span><span class="en">Every word</span></div>
+  <h1><span class="es">Glosario</span><span class="en">Glossary</span></h1>
+  <p class="lede es">Todas las palabras del sitio, explicadas en dos líneas y siempre en contexto de fútbol. Si oyes una de éstas en un entrenamiento, ya sabes de qué va.</p>
+  <p class="lede en">Every word on the site, explained in two lines and always in a football context. If you hear one of these at training, you'll know what it means.</p>
+  <div class="meta"><span class="chip" id="gcount"></span></div>
+</section>
+
+<hr class="rule">
+
+<label for="gsearch" style="display:block;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-bottom:.5rem">
+  <span class="es">Buscar</span><span class="en">Search</span>
+</label>
+<input class="gsearch" id="gsearch" type="search" autocomplete="off"
+  placeholder="desmarque, transición, pie lejano…">
+
+<div class="glist" id="glist"></div>
+
+<div class="box key" style="margin-top:2.4rem">
+  <p class="es">Un consejo sobre estas palabras: <b>no hace falta que las memorices</b>. Lo que importa no es decirlas bien, es entender lo que pasa en el campo. Si un día usas «hueco» en vez de «espacio entre líneas», no pasa absolutamente nada.</p>
+  <p class="es">Sirven para una cosa concreta: cuando tu entrenador o un compañero las use, que tú sepas exactamente de qué está hablando. Eso es todo.</p>
+  <p class="en">One piece of advice about these words: <b>you don't need to memorise them</b>. What matters isn't saying them correctly, it's understanding what happens on the pitch. If one day you say “gap” instead of “space between the lines”, absolutely nothing happens.</p>
+  <p class="en">They're for one specific thing: when your coach or a teammate uses one, you'll know exactly what they're talking about. That's all.</p>
+</div>
+
+<nav class="pager" id="pager" aria-label="Chapter navigation"></nav>
+
+</div></main>
+<footer class="site"><div class="wrap">
+  <p class="es"><a href="index.html">Volver al inicio</a> · <a href="01-acciones.html">Empezar por el capítulo 1</a></p>
+  <p class="en"><a href="index.html">Back to home</a> · <a href="01-acciones.html">Start at chapter 1</a></p>
+</div></footer>
+<script src="glossary.js?v=5"></script>
+<script src="app.js?v=5"></script>
+</body>
+</html>

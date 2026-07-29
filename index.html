@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El juego dentro del juego · La teoría del fútbol</title>
+<meta name="description" content="La teoría del fútbol explicada para jóvenes jugadores. Football theory explained for young players.">
+<link rel="stylesheet" href="style.css?v=5">
+<script>try{var l=localStorage.getItem('jdj.lang')||'es',t=localStorage.getItem('jdj.theme')||'dark';var h=document.documentElement;h.setAttribute('data-lang',l);h.setAttribute('data-theme',t);h.setAttribute('lang',l);}catch(e){}</script>
+</head>
+<body data-page="home">
+<a class="skip" href="#main"><span class="es">Saltar al contenido</span><span class="en">Skip to content</span></a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" data-ic="pitch"></span>
+      <span class="brand-txt">
+        <span class="es">El juego dentro del juego</span><span class="en">The game inside the game</span>
+        <small><span class="es">Teoría del fútbol</span><span class="en">Football theory</span></small>
+      </span>
+    </a>
+    <span class="spacer"></span>
+    <div class="langsw" role="group" aria-label="Idioma / Language">
+      <button data-lang="es" aria-pressed="true">ES</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <button class="ctrl" id="themeBtn" aria-label="Theme"></button>
+    <button class="ctrl" id="menuBtn" aria-expanded="false" aria-controls="drawer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span data-ui="menu">Capítulos</span>
+    </button>
+  </div>
+  <div class="progress"><i></i></div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<nav class="drawer" id="drawer" aria-label="Chapters">
+  <div class="drawer-hd">
+    <strong data-ui="chapters">Capítulos</strong><span class="spacer"></span>
+    <button class="ctrl" id="closeDrawer" aria-label="Close">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerList"></div>
+</nav>
+
+<main id="main">
+  <div class="wrap wide">
+    <section class="home-hero">
+      <div class="eyebrow"><span class="es">Para jugadores que quieren entender el juego</span><span class="en">For players who want to understand the game</span></div>
+      <h1>
+        <span class="es">El juego <span class="g">dentro</span> del juego</span>
+        <span class="en">The game <span class="g">inside</span> the game</span>
+      </h1>
+      <p class="lede es">Hay un partido que se ve: el balón, los goles, los gritos. Y hay otro partido que casi nadie mira: <b>el de las decisiones</b>. Este es el mapa de ese segundo partido. Cuando lo entiendas, el fútbol se te va a volver más lento, más fácil y mucho más divertido.</p>
+      <p class="lede en">There's a match everyone sees: the ball, the goals, the shouting. And there's another match almost nobody watches: <b>the match of decisions</b>. This is the map of that second match. Once you understand it, football starts to feel slower, easier and a lot more fun.</p>
+      <div class="cta">
+        <a class="btn p" href="01-acciones.html">
+          <span class="es">Empezar por el capítulo 1</span><span class="en">Start with chapter 1</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn s" href="glosario.html"><span class="es">Ver el glosario</span><span class="en">See the glossary</span></a>
+      </div>
+    </section>
+
+    <div class="readout" id="readout">
+      <span class="ring"></span>
+      <span class="rtxt"><b></b><span class="rpct"></span></span>
+      <button class="ctrl" id="resetBtn" data-ui="resetP">Reiniciar</button>
+    </div>
+
+    <section class="pillars">
+      <div class="pillar">
+        <div class="ic" style="background:color-mix(in srgb, var(--violet) 20%, transparent);color:var(--violet)" data-ic="team"></div>
+        <h3><span class="es">Primero el equipo</span><span class="en">Team first</span></h3>
+        <p class="es">Cada cosa que haces tiene que servirle a alguien más. Si no, es sólo una carrera bonita.</p>
+        <p class="en">Everything you do has to help someone else. If it doesn't, it's just a nice-looking run.</p>
+      </div>
+      <div class="pillar">
+        <div class="ic" style="background:color-mix(in srgb, var(--amber) 20%, transparent);color:var(--amber)" data-ic="bulb"></div>
+        <h3><span class="es">Piensa tú</span><span class="en">You do the thinking</span></h3>
+        <p class="es">En cada capítulo te voy a hacer preguntas. No hay que acertar: hay que pensar.</p>
+        <p class="en">Every chapter will ask you questions. You don't have to be right: you have to think.</p>
+      </div>
+      <div class="pillar">
+        <div class="ic" style="background:color-mix(in srgb, var(--cyan) 20%, transparent);color:var(--cyan)" data-ic="chain"></div>
+        <h3><span class="es">Todo está conectado</span><span class="en">Everything is connected</span></h3>
+        <p class="es">Un paso tuyo cambia lo que pueden hacer otros veintiún jugadores. En serio.</p>
+        <p class="en">One step from you changes what twenty-one other players can do. Really.</p>
+      </div>
+    </section>
+
+    <div class="box key">
+      <p class="es"><b>La frase que resume todo este sitio:</b> antes de hacer algo en el campo, tu cabeza debería contestar una pregunta de una sola palabra: <b>¿para qué?</b> Si tienes respuesta, es una acción de equipo. Si no la tienes, es sólo movimiento.</p>
+      <p class="en"><b>The sentence that sums up this whole site:</b> before you do anything on the pitch, your head should answer a one-word question: <b>what for?</b> If you have an answer, it's a team action. If you don't, it's just movement.</p>
+    </div>
+
+    <section class="sec">
+      <h2><span class="es">Los 10 capítulos</span><span class="en">The 10 chapters</span></h2>
+      <p class="es">Van en orden: cada uno usa lo del anterior. Puedes leer uno por noche, sin prisa. Las palabras <b class="t" data-t="intencion">difíciles</b> están subrayadas con puntitos: tócalas y te digo qué significan.</p>
+      <p class="en">They're in order: each one uses the one before it. One a night is plenty. <b class="t" data-t="intencion">Tricky words</b> are underlined with dots: tap them and I'll tell you what they mean.</p>
+      <div class="grid" id="homeGrid"></div>
+    </section>
+
+    <section class="sec">
+      <h2><span class="es">De dónde sale todo esto</span><span class="en">Where all this comes from</span></h2>
+      <p class="es">Este sitio está construido sobre <i>La Teoría del Fútbol</i>, un libro para entrenadores profesionales escrito por Raymond Verheijen, a partir del trabajo de Jan Tamboer, Bert van Lingen y la federación holandesa, con el legendario entrenador Rinus Michels detrás de la idea original. Es un libro difícil, escrito para adultos que entrenan equipos de primera división.</p>
+      <p class="en">This site is built on <i>Football Theory</i>, a book for professional coaches by Raymond Verheijen, based on the work of Jan Tamboer, Bert van Lingen and the Dutch football association, with legendary coach Rinus Michels behind the original idea. It's a hard book, written for adults who coach first-division teams.</p>
+      <p class="es">Lo que hay aquí son sus ideas de verdad, sin rebajarlas, contadas de forma que puedas usarlas el sábado que viene. La parte de preparación física profesional (cuánto descansar entre entrenamientos, cómo planificar seis semanas) se ha dejado fuera a propósito: eso es trabajo de tu entrenador, no tuyo. Lo tuyo es entender el juego.</p>
+      <p class="en">What's here are its real ideas, not watered down, told in a way you can use next Saturday. The professional fitness-planning part (how long to rest between sessions, how to plan six weeks) is deliberately left out: that's your coach's job, not yours. Your job is understanding the game.</p>
+      <div class="pullquote">
+        <span class="es">«Estas no son opiniones para debatir; son hechos con los que hay que lidiar.»</span>
+        <span class="en">“These are not opinions to be debated; these are facts to be dealt with.”</span>
+        <small><span class="es">Citado en el capítulo 1 del libro</span><span class="en">Quoted in chapter 1 of the book</span></small>
+      </div>
+    </section>
+
+    <div class="box think" style="margin-bottom:2.5rem">
+      <p class="es">Antes de empezar, una pregunta para llevarte a la cama hoy: piensa en la última vez que tu equipo marcó un gol. ¿Cuántos jugadores participaron en ese gol? Cuenta bien. ¿Y cuántos aparecen en el resumen?</p>
+      <p class="en">Before you start, one question to take to bed tonight: think of the last goal your team scored. How many players took part in that goal? Count properly. And how many of them show up in the highlights?</p>
+      <details class="rev"><summary>＋ <span class="auto">Ver una pista</span></summary>
+        <div class="body">
+          <p class="es">Casi siempre la respuesta correcta es <b>«los once»</b>. El que hizo el desmarque que se llevó a un defensa. El que aguantó el balón dos segundos más para que el otro llegara. El defensa que, al no perderla atrás, permitió que el ataque existiera. En el capítulo 8 y 9 vamos a ver esto de cerca.</p>
+          <p class="en">Almost always the right answer is <b>“all eleven”</b>. The one who made the run that took a defender away. The one who held the ball two extra seconds so someone could arrive. The defender who, by not losing it at the back, made the attack possible at all. Chapters 8 and 9 look at this closely.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</main>
+
+<footer class="site"><div class="wrap wide">
+  <p class="es">Hecho con cariño para un jugador de 10 años que quiere entender el juego, no sólo jugarlo. · Basado en <i>La Teoría del Fútbol</i> (Verheijen / Tamboer / KNVB).</p>
+  <p class="en">Made with love for a 10-year-old player who wants to understand the game, not just play it. · Based on <i>Football Theory</i> (Verheijen / Tamboer / KNVB).</p>
+</div></footer>
+
+<script src="glossary.js?v=5"></script>
+<script src="app.js?v=5"></script>
+</body>
+</html>
